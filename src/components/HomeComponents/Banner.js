@@ -46,6 +46,7 @@ const Banner = () => {
             className="animate-fade-in h-[100%] w-auto max-w-full max-h-full"
             src={LogoBanner}
             alt=""
+            loading="lazy"
           />
         </div>
         <div

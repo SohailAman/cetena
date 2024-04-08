@@ -78,6 +78,7 @@ const KeyPOINTS = () => {
               <img
                 src={tokenOne}
                 alt="one"
+                loading="lazy"
                 style={{ height: "100%", width: "auto" }}
               />
             </div>
@@ -182,6 +183,7 @@ const KeyPOINTS = () => {
               <img
                 src={tokenTwo}
                 alt=""
+                loading="lazy"
                 style={{ height: "100%", width: "auto" }}
               />
             </div>
@@ -286,6 +288,7 @@ const KeyPOINTS = () => {
                 className="w-full"
                 src={tokenThree}
                 alt=""
+                loading="lazy"
                 style={{ height: "100%", width: "auto" }}
               />
             </div>
