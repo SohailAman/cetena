@@ -1,10 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 @font-face {
   font-family: Aeonik;
   src: url(../font/Aeonik-Regular.woff);
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: "Aeonik", sans-serif;
@@ -284,6 +284,10 @@ body {
   );
 }
 
+.mt__flex {
+  margin-top: 10rem !important;
+}
+
 @media (max-width: 600px) {
   .mg__sec2 {
     margin-top: -1rem !important;
@@ -291,9 +295,22 @@ body {
 
   .mg__sec--tab {
     display: flex;
-    justify-content: center;
+    align-items: center;
     height: 100vh !important;
     margin-top: 30% !important;
     margin-bottom: auto !important;
+  }
+
+  .mg__sec--tab div {
+    height: 50vh;
+  }
+
+  .mg__sec--tab div img {
+    height: 100%;
+    width: auto;
+  }
+
+  .mt__flex {
+    margin-top: 15rem !important;
   }
 }

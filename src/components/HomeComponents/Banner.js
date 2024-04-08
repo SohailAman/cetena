@@ -10,6 +10,7 @@ const Banner = () => {
       "https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js";
     script.async = true;
     script.dataset.buttonColor = "#d4d4d4";
+    script.dataset.labels = ["email"];
     // script.dataset.backgroundColor = "#00ff00";
     // script.dataset.labels = ["hello"];
     script.dataset.buttonTextColor = "#FFFFFF";

@@ -4,7 +4,9 @@ import React from "react";
 const BigBanner = () => {
   return (
     <div className="mg__sec--tab">
-      <img src={image} alt="" className="bg-banner" loading="lazy" />
+      <div>
+        <img src={image} alt="" className="bg-banner" loading="lazy" />
+      </div>
     </div>
   );
 };

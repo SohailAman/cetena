@@ -8,10 +8,20 @@ import Img7 from "../../assets/img/7.png";
 
 const FlexItems = () => {
   return (
-    <section className="flex all-imgs flex-col flexes space-y-40 md:space-y-10">
-      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse">
+    <section className="flex all-imgs flex-col flexes space-y-40 md:space-y-10 mt__flex">
+      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse h-[70vh] sm:h-[80vh]">
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
-          <img className="absolute" src={Img4} alt="" />
+          <img
+            className="absolute"
+            style={{
+              // aspectRatio: "2.02",
+              height: "auto",
+              maxWidth: "100%",
+              objectFit: "contain",
+            }}
+            src={Img4}
+            alt=""
+          />
         </div>
         <div className="flex max-w-md flex-1 flex-col sm:max-w-none tiles">
           <h1 className="text-24 font-semibold sm:text-[35px]">
@@ -23,7 +33,7 @@ const FlexItems = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row">
+      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row h-[70vh] sm:h-[80vh]">
         <div className="relative z-[-1] aspect-square min-h-[40vh] flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
             className="absolute left-[-60%] top-1/4 scale-[220%]"
@@ -41,10 +51,10 @@ const FlexItems = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse">
+      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse h-[70vh] sm:h-[80vh]">
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
-            className="scale-[100%] sm:-top-40 sm:left-10 sm:scale-150"
+            className="absolute scale-[100%] sm:-top-40 sm:left-10 sm:scale-150"
             src={Img6}
             alt=""
             id="contract-img"
@@ -61,8 +71,8 @@ const FlexItems = () => {
         </div>
       </div>
       <div
-        className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row"
-        id="contract-img-1-parent"
+        className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row h-[70vh]"
+        // id="contract-img-1-parent"
       >
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img

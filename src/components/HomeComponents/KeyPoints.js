@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import tokenThree from "../../assets/img/3a.png";
-import tokenTwo from "../../assets/img/2.png";
-import tokenOne from "../../assets/img/1a.png";
+import tokenTwo from "../../assets/img/2 - resized.png";
+import tokenOne from "../../assets/img/1a - resized.png";
 import FeatureBridge from "../../assets/img/1.svg";
 import FeatureBridge2 from "../../assets/img/2.svg";
 import FeatureBridge3 from "../../assets/img/3.svg";
@@ -33,7 +33,7 @@ const KeyPOINTS = () => {
       <div className="grid cards2 grid-cols-1 gap-[20px] md:grid-cols-3 md:gap-[10px]">
         <div className="card ">
           <div
-            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4 h-[320px] sm:h-[400px]"
+            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4 h-[100%]"
             style={{
               // height: "350px",
               // height: "400px",
@@ -45,8 +45,8 @@ const KeyPOINTS = () => {
               //   "linear-gradient(122.46deg, #090909 3.2%, #111111 98.88%);",
             }}
           >
-            <div class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-br from-white to-transparent opacity-20"></div>
-            <div class="absolute top-0 left-0 w-full h-1/2 rounded-xl bg-gradient-to-t from-white opacity-20"></div>
+            {/* <div class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-br from-white br-[0.75rem] to-transparent opacity-20"></div> */}
+            {/* <div class="absolute top-0 left-0 w-full h-1/2 br-[0.75rem] rounded-xl bg-gradient-to-t from-white opacity-20"></div> */}
             <span
               id="one"
               // className="glass-effect"
@@ -72,14 +72,22 @@ const KeyPOINTS = () => {
               }}
             ></span>
             <div
-              className="imgcona img3 h-[67%] sm:h-[75%]"
-              style={{ width: "auto", paddingTop: "4px" }}
+              className="imgcona img3"
+              style={{
+                width: "auto",
+                paddingTop: "4px",
+              }}
             >
               <img
                 src={tokenOne}
                 alt="one"
                 loading="lazy"
-                style={{ height: "100%", width: "auto" }}
+                style={{
+                  aspectRatio: "2.02",
+                  height: "auto",
+                  maxWidth: "100%",
+                  objectFit: "contain",
+                }}
               />
             </div>
 
@@ -142,7 +150,7 @@ const KeyPOINTS = () => {
 
         <div className="card ">
           <div
-            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4 h-[320px] sm:h-[400px]"
+            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4 h-[100%]"
             style={{
               // minHeight: "360px",
               paddingBottom: "20px",
@@ -150,8 +158,8 @@ const KeyPOINTS = () => {
               "@media (maxWidth: 1199px)": { height: "400px" },
             }}
           >
-            <div class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-br from-white to-transparent opacity-40"></div>
-            <div class="absolute top-0 left-0 w-full h-1/2 rounded-xl bg-gradient-to-t from-white opacity-40"></div>
+            {/* <div class="absolute top-0 left-0 w-full h-full br-[0.75rem] rounded-xl bg-gradient-to-br from-white to-transparent opacity-40"></div> */}
+            {/* <div class="absolute top-0 left-0 w-full h-1/2 br-[0.75rem] rounded-xl bg-gradient-to-t from-white opacity-40"></div> */}
             <span
               id="two"
               // className="glass-effect"
@@ -176,15 +184,12 @@ const KeyPOINTS = () => {
                 zIndex: 10,
               }}
             ></span>
-            <div
-              className="img-cona img2 h-[75%] sm:h-[85%]"
-              style={{ width: "auto" }}
-            >
+            <div className="img-cona img2" style={{ width: "auto" }}>
               <img
                 src={tokenTwo}
                 alt=""
                 loading="lazy"
-                style={{ height: "100%", width: "auto" }}
+                style={{ height: "auto", width: "100%", aspectRatio: "1.95" }}
               />
             </div>
 
@@ -246,7 +251,7 @@ const KeyPOINTS = () => {
         </div>
         <div className="card ">
           <div
-            className="flex flex-col items-center rounded-[0.9rem] border border-cf-gray-4 h-[320px] sm:h-[400px]"
+            className="flex flex-col items-center rounded-[0.9rem] border border-cf-gray-4 h-[100%]"
             style={{
               // minHeight: "350px",
               paddingBottom: "20px",
@@ -278,11 +283,16 @@ const KeyPOINTS = () => {
                 zIndex: 10,
               }}
             ></span>
-            <div class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-br from-white to-transparent opacity-20"></div>
-            <div class="absolute top-0 left-0 w-full h-1/2 rounded-xl bg-gradient-to-t from-white opacity-10"></div>
+            {/* <div class="absolute top-0 left-0 w-full h-full br-[0.75rem] rounded-xl bg-gradient-to-br from-white to-transparent opacity-20"></div> */}
+            {/* <div class="absolute top-0 left-0 w-full h-1/2 br-[0.75rem] rounded-xl bg-gradient-to-t from-white opacity-10"></div> */}
             <div
-              className="img-cona img1 h-[75%] sm:h-[95%]"
-              style={{ width: "auto", padding: "4px 4px 0 4px" }}
+              className="img-cona img1"
+              style={{
+                height: "auto",
+                width: "100%",
+                aspectRatio: "1.95",
+                padding: "4px 4px 0 4px",
+              }}
             >
               <img
                 className="w-full"
