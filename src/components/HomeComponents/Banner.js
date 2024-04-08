@@ -11,11 +11,13 @@ const Banner = () => {
     script.async = true;
     script.dataset.buttonColor = "#d4d4d4";
     script.dataset.labels = ["email"];
+    script.dataset.icon = "hello";
     // script.dataset.backgroundColor = "#00ff00";
     // script.dataset.labels = ["hello"];
-    script.dataset.buttonTextColor = "#FFFFFF";
+    // script.dataset.buttonTextColor = "#FFFFFF";
     script.dataset.buttonTextColor = "#5f5f5f";
     script.dataset.site = "https://blog.catena.tools/";
+    // console.log(script);
 
     formRef.current.insertBefore(script, formRef.current.firstChild);
 

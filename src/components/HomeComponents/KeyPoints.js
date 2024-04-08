@@ -288,9 +288,6 @@ const KeyPOINTS = () => {
             <div
               className="img-cona img1"
               style={{
-                height: "auto",
-                width: "100%",
-                aspectRatio: "1.95",
                 padding: "4px 4px 0 4px",
               }}
             >
@@ -299,7 +296,12 @@ const KeyPOINTS = () => {
                 src={tokenThree}
                 alt=""
                 loading="lazy"
-                style={{ height: "100%", width: "auto" }}
+                style={{
+                  height: "auto",
+                  width: "100%",
+                  aspectRatio: "1.95",
+                  // width: "auto",
+                }}
               />
             </div>
 
