@@ -1,6 +1,36 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import LogoBanner from "../../assets/img/LOGO C.png";
+
 const Banner = () => {
+  const formRef = useRef(null);
+
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js";
+    script.async = true;
+    script.dataset.buttonColor = "#d4d4d4";
+    // script.dataset.backgroundColor = "#00ff00";
+    // script.dataset.labels = ["hello"];
+    script.dataset.buttonTextColor = "#FFFFFF";
+    script.dataset.buttonTextColor = "#5f5f5f";
+    script.dataset.site = "https://blog.catena.tools/";
+
+    formRef.current.insertBefore(script, formRef.current.firstChild);
+
+    // script.addEventListener("load", () => {
+    //   const button = document.querySelector(".gh-signup-root");
+    //   console.log(button.childNodes);
+    //   // if (button) {
+    //   //   button.innerText = "Your New Text";
+    //   // }
+    // });
+
+    return () => {
+      formRef?.current?.removeChild(script);
+    };
+  }, []);
+
   return (
     <section
       className="  flex flex-col items-center h-1/5 sm:h-1/2 md:h-1/3 lg:h-1/4 xl:h-1/5"
@@ -40,8 +70,8 @@ const Banner = () => {
             tracking and an execution terminal for DEX participants. <br />
           </span>
           <br />
-          <div className="w-full text-[14px] animate-move-up">
-            <div
+          <div ref={formRef} className="w-full text-[14px] animate-move-up">
+            {/* <div
               className="h-[38px] w-full overflow-hidden md:h-auto md:w-[500px] pl-3 border-spacing-1 rounded-md text-cf-light-2 border-cf-gray-4 bg-cf-gray-2 flex justify-start items-center border hover:border-cf-gray-5 hover:ease-out duration-300 focus-within:bg-cf-gray-3 focus-within:border-cf-gray-5 focus-within:text-white border-cf-gray-4"
               style={{
                 border: "1px solid #dadada",
@@ -51,22 +81,22 @@ const Banner = () => {
               <input
                 type="text"
                 className="
-rounded-xl
-text-cf-light-3
-flex-1
-appearance-none
-w-full
-py-2
-pl-2.5
-pr-2.5
-bg-transparent
-placeholder-cf-light-1
-shadow-sm
-focus:text-cf-light-3
-focus:outline-none
-focus:border-transparent
-h-12
- pointer-events-auto h-[44px] border-none bg-none"
+                rounded-xl
+                text-cf-light-3
+                flex-1
+                appearance-none
+                w-full
+                py-2
+                pl-2.5
+                pr-2.5
+                bg-transparent
+                placeholder-cf-light-1
+                shadow-sm
+                focus:text-cf-light-3
+                focus:outline-none
+                focus:border-transparent
+                h-12
+                pointer-events-auto h-[44px] border-none bg-none"
                 placeholder="Enter your email"
                 defaultValue
                 style={{ color: "black" }}
@@ -100,7 +130,7 @@ h-12
                   />
                 </svg>
               </button>
-            </div>
+            </div> */}
             <br />
             Keep up to date with our progress
           </div>

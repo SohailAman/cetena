@@ -290,6 +290,10 @@ body {
   }
 
   .mg__sec--tab {
-    margin-top: 2rem !important;
+    display: flex;
+    justify-content: center;
+    height: 100vh !important;
+    margin-top: 30% !important;
+    margin-bottom: auto !important;
   }
 }

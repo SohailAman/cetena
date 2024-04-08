@@ -1,10 +1,14 @@
 import React, { useRef, useEffect } from "react";
-import LogoY from "../../assets/img/Compass Logo.mp4";
+import LogoY from "../../assets/img/Compass Logo.webm";
 const Future = () => {
   const videoRef = useRef(null);
 
   useEffect(() => {
     const video = videoRef.current;
+
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
 
     const handleLoadedMetadata = () => {
       video.controls = false;

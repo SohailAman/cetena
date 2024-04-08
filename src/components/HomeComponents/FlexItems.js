@@ -8,7 +8,7 @@ import Img7 from "../../assets/img/7.png";
 
 const FlexItems = () => {
   return (
-    <section className="flex all-imgs flex-col flexes space-y-10">
+    <section className="flex all-imgs flex-col flexes space-y-40 md:space-y-10">
       <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse">
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img className="absolute" src={Img4} alt="" />

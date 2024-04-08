@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import tokenThree from "../../assets/img/3a.png";
 import tokenTwo from "../../assets/img/2.png";
-import tokenOne from "../../assets/img/1.png";
+import tokenOne from "../../assets/img/1a.png";
 import FeatureBridge from "../../assets/img/1.svg";
 import FeatureBridge2 from "../../assets/img/2.svg";
 import FeatureBridge3 from "../../assets/img/3.svg";
@@ -33,18 +33,20 @@ const KeyPOINTS = () => {
       <div className="grid cards2 grid-cols-1 gap-[20px] md:grid-cols-3 md:gap-[10px]">
         <div className="card ">
           <div
-            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4 py-4 sm:min-h-80"
+            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4 h-[320px] sm:h-[400px]"
             style={{
-              minHeight: "360px",
+              // height: "350px",
               // height: "400px",
               paddingBottom: "20px",
               overflow: "hidden",
               position: "relative",
-              "@media (maxWidth: 1199px)": { height: "400px" },
+              // "@media (maxWidth: 1199px)": { height: "400px" },
               // background:
               //   "linear-gradient(122.46deg, #090909 3.2%, #111111 98.88%);",
             }}
           >
+            <div class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-br from-white to-transparent opacity-20"></div>
+            <div class="absolute top-0 left-0 w-full h-1/2 rounded-xl bg-gradient-to-t from-white opacity-20"></div>
             <span
               id="one"
               // className="glass-effect"
@@ -61,21 +63,33 @@ const KeyPOINTS = () => {
                 borderRadius: "0.75rem",
                 width: "100%",
                 height: "100%",
+                boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                backdropFilter: "blur(0.5px)",
+                webkitBackdropFilter: "blur(0.5px)",
                 background:
                   "radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsla(0, 0%, 10%, 0.2), transparent 40%)",
-                // zIndex: -1,
+                zIndex: 10,
               }}
             ></span>
             <div
-              className="imgcona img3"
-              style={{ height: "100%", width: "auto" }}
+              className="imgcona img3 h-[67%] sm:h-[75%]"
+              style={{ width: "auto", paddingTop: "4px" }}
             >
-              <img src={tokenOne} alt="one" />
+              <img
+                src={tokenOne}
+                alt="one"
+                style={{ height: "100%", width: "auto" }}
+              />
             </div>
 
             <div
-              style={{ flexWrap: "wrap" }}
-              className="flex space-x-2 px-[20px]"
+              style={{
+                flexWrap: "wrap",
+                zIndex: "100",
+                // marginTop: "1.5rem",
+                // justifySelf: "flex-end",
+              }}
+              className="flex space-x-2 px-[20px] mt-[1rem] lg:mt-[1.5rem] mb-[1rem] sm:mb-[0]"
             >
               <div
                 style={{
@@ -127,14 +141,16 @@ const KeyPOINTS = () => {
 
         <div className="card ">
           <div
-            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4  "
+            className="flex flex-col items-center rounded-[0.75rem] border border-cf-gray-4 h-[320px] sm:h-[400px]"
             style={{
-              minHeight: "360px",
+              // minHeight: "360px",
               paddingBottom: "20px",
               position: "relative",
               "@media (maxWidth: 1199px)": { height: "400px" },
             }}
           >
+            <div class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-br from-white to-transparent opacity-40"></div>
+            <div class="absolute top-0 left-0 w-full h-1/2 rounded-xl bg-gradient-to-t from-white opacity-40"></div>
             <span
               id="two"
               // className="glass-effect"
@@ -151,20 +167,32 @@ const KeyPOINTS = () => {
                 borderRadius: "0.75rem",
                 width: "100%",
                 height: "100%",
+                boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                backdropFilter: "blur(0.5px)",
+                webkitBackdropFilter: "blur(0.5px)",
                 background:
                   "radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsla(0, 0%, 10%, 0.2), transparent 40%)",
-                // zIndex: -1,
+                zIndex: 10,
               }}
             ></span>
             <div
-              className="img-cona img2"
-              style={{ height: "100%", width: "auto" }}
+              className="img-cona img2 h-[75%] sm:h-[85%]"
+              style={{ width: "auto" }}
             >
-              <img src={tokenTwo} alt="" />
+              <img
+                src={tokenTwo}
+                alt=""
+                style={{ height: "100%", width: "auto" }}
+              />
             </div>
 
             <div
-              style={{ flexWrap: "wrap", justifySelf: "flex-start" }}
+              style={{
+                flexWrap: "wrap",
+                justifySelf: "flex-start",
+                zIndex: "100",
+                marginTop: "1rem",
+              }}
               className="flex space-x-2 px-[20px]"
             >
               <div
@@ -216,9 +244,9 @@ const KeyPOINTS = () => {
         </div>
         <div className="card ">
           <div
-            className="flex flex-col items-center rounded-[0.9rem] border border-cf-gray-4  "
+            className="flex flex-col items-center rounded-[0.9rem] border border-cf-gray-4 h-[320px] sm:h-[400px]"
             style={{
-              minHeight: "350px",
+              // minHeight: "350px",
               paddingBottom: "20px",
               position: "relative",
               "@media (maxWidth: 1199px)": { height: "400px" },
@@ -240,17 +268,30 @@ const KeyPOINTS = () => {
                 borderRadius: "0.75rem",
                 width: "100%",
                 height: "100%",
+                boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                backdropFilter: "blur(0.5px)",
+                webkitBackdropFilter: "blur(0.5px)",
                 background:
                   "radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), hsla(0, 0%, 10%, 0.2), transparent 40%)",
-                // zIndex: -1,
+                zIndex: 10,
               }}
             ></span>
-            <div className="img-cona img1">
-              <img className="w-full" src={tokenThree} alt="" />
+            <div class="absolute top-0 left-0 w-full h-full rounded-xl bg-gradient-to-br from-white to-transparent opacity-20"></div>
+            <div class="absolute top-0 left-0 w-full h-1/2 rounded-xl bg-gradient-to-t from-white opacity-10"></div>
+            <div
+              className="img-cona img1 h-[75%] sm:h-[95%]"
+              style={{ width: "auto", padding: "4px 4px 0 4px" }}
+            >
+              <img
+                className="w-full"
+                src={tokenThree}
+                alt=""
+                style={{ height: "100%", width: "auto" }}
+              />
             </div>
 
             <div
-              style={{ flexWrap: "wrap" }}
+              style={{ flexWrap: "wrap", zIndex: "100", marginTop: "1rem" }}
               className="flex space-x-2 px-[20px]"
             >
               <div
