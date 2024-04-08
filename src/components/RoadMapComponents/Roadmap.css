@@ -1,0 +1,110 @@
+@font-face {
+  font-family: Aeonik;
+  src: url(../../assets/font/Aeonik-Regular.woff);
+}
+#roadmap-section {
+  padding: 10rem 0;
+}
+.roadmap-wrapper {
+  width: 80%;
+  margin: 5rem auto;
+}
+.roadmap-wrapper .roadmap-row {
+  width: 100%;
+}
+.roadmap-wrapper .roadmap-row .roadmap-left-col,
+.roadmap-wrapper .roadmap-row .roadmap-right-col {
+  width: 45%;
+  padding: 0 3rem 2rem;
+}
+.roadmap-wrapper .roadmap-row .roadmap-center-col {
+  width: 10%;
+  position: relative;
+}
+.text-31as {
+  font-size: 64px !important;
+}
+.roadmap-wrapper .roadmap-row .roadmap-year {
+  font-family: "Aeonik";
+  font-size: 38px;
+  line-height: 1em;
+  color: #000;
+  margin-bottom: 1rem;
+  transform: translateY(-4px);
+}
+.roadmap-wrapper .roadmap-row .roadmap-left-col .roadmap-year {
+  text-align: right;
+}
+.roadmap-wrapper .roadmap-row .roadmap-content li {
+  font-family: "Aeonik";
+  font-size: 24px;
+  color: #828282;
+  margin-bottom: 0.5rem;
+}
+.roadmap-wrapper .roadmap-row .roadmap-left-col li {
+  text-align: right;
+}
+.roadmap-wrapper .roadmap-row .roadmap-center-col .roadmap-dot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  z-index: 40;
+}
+.roadmap-wrapper .roadmap-row .roadmap-center-col .roadmap-bar {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background-color: #e1e1e1;
+  z-index: 39;
+}
+@media (max-width: 1024px) {
+  .roadmap-wrapper {
+    width: 100%;
+  }
+  .roadmap-wrapper .roadmap-row .roadmap-left-col,
+  .roadmap-wrapper .roadmap-row .roadmap-right-col {
+    padding-inline: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap-wrapper .roadmap-row .roadmap-center-col .roadmap-dot {
+    width: 13px;
+    height: 13px;
+  }
+  .roadmap-wrapper .roadmap-row .roadmap-content li {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .roadmap-wrapper {
+    margin-block: 4rem;
+  }
+  #roadmap-section {
+    padding-block: 6rem 2rem;
+  }
+  .roadmap-wrapper .roadmap-row .roadmap-center-col .roadmap-dot {
+    top: 12px;
+  }
+  .pains {
+    height: 113% !important;
+    background-color: rgb(59, 59, 59) !important;
+    z-index: 99 !important;
+  }
+}
+@media (max-width: 500px) {
+  .roadmap-wrapper .roadmap-row .roadmap-year {
+    font-size: 30px;
+  }
+  .roadmap-wrapper .roadmap-row .roadmap-center-col .roadmap-dot {
+    top: 10px;
+  }
+}

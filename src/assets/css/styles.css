@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Aeonik;
+  src: url(../font/Aeonik-Regular.woff);
+}
+
+body {
+  font-family: "Aeonik", sans-serif;
+}
+.logos-b {
+  width: 24vw;
+}
+.pjui {
+  margin-top: 10.2vw;
+}
+
+.faq-heading {
+  font-family: "Aeonik";
+  font-size: xx-large;
+  font: bold;
+  color: black;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hr-line {
+  width: 60%;
+  margin: auto;
+
+  border-bottom: 1px solid #777; /* Changed border to a solid line */
+}
+.faqmain {
+  padding-top: 20px;
+}
+/* Style the buttons that are used to open and close the FAQ page body */
+.faq-page {
+  /* background-color: #eee; */
+  border-bottom: 1px solid #777; /* Changed border to a solid line */
+
+  color: #444;
+  cursor: pointer;
+  padding: 30px 20px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+  font-size: 25px;
+}
+
+.faq-body {
+  margin: auto;
+  width: 50%;
+  padding: auto; /* This should be removed */
+  font-size: 16px; /* Change the font size to your desired size */
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* Style the FAQ page panel. Note: hidden by default */
+.faq-body {
+  padding: 18px; /* Increased padding for better readability */
+  background-color: white;
+  color: black;
+  display: none;
+  margin-left: 260px;
+  /* overflow: hidden; */
+}
+
+.faq-page:after {
+  /* content: '\2295'; */
+  content: url(../img/plus-circle.svg);
+  /* Unicode character for "plus" sign (+) */
+  font-size: 40px;
+  color: #000000;
+  float: right;
+  margin-left: 5px;
+  margin-top: -40px;
+}
+
+.active:after {
+  /* content: "\2296"; */
+  content: url(../img/dash-circle.svg);
+  /* Unicode character for "minus" sign (-) */
+}
+
+.blob {
+  filter: blur(40px);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: rgb(0, 0, 0, 0.05);
+  transition: all 300ms ease-in-out;
+}
+
+.fakeblob {
+  display: hidden;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.card {
+  overflow: hidden;
+  margin: 0;
+  position: relative;
+  transition: all 300ms ease-in-out;
+}
+
+.inner {
+  overflow: hidden;
+  backdrop-filter: blur(80px);
+  transition: all 300ms ease-in-out;
+}
+
+.card:hover > .inner {
+  backdrop-filter: blur(80px);
+}
+
+.animate-fade-in {
+  opacity: 0; /* Start with zero opacity */
+  animation: fade-in 0.9s ease-in-out 1s forwards; /* Animation name, duration, timing function, and fill mode */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0; /* Start at zero opacity */
+    /* transform: scale(90%); */
+  }
+  to {
+    opacity: 1; /* End at full opacity */
+    /* transform: scale(100%); */
+  }
+}
+
+.animate-move-down {
+  opacity: 0; /* Start with zero opacity */
+  animation: move-down 0.75s ease-in-out forwards; /* Animation name, duration, timing function, and fill mode */
+}
+
+@keyframes move-down {
+  from {
+    opacity: 0; /* Start at zero opacity */
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1; /* End at full opacity */
+    /* transform: translateY(0px); */
+  }
+}
+
+.animate-move-down-2 {
+  opacity: 0; /* Start with zero opacity */
+  animation: move-down-2 0.75s ease-in-out 0.5s forwards; /* Animation name, duration, timing function, and fill mode */
+}
+
+@keyframes move-down-2 {
+  from {
+    opacity: 0; /* Start at zero opacity */
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1; /* End at full opacity */
+    /* transform: translateY(0px); */
+  }
+}
+
+.animate-move-up {
+  opacity: 0; /* Start with zero opacity */
+  animation: move-up 1s ease-in-out 0.75s forwards; /* Animation name, duration, timing function, and fill mode */
+}
+
+@keyframes move-up {
+  from {
+    opacity: 0; /* Start at zero opacity */
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1; /* End at full opacity */
+    transform: translateY(0px);
+  }
+}
+
+.cta {
+  /* position: absolute;
+    right: -9rem; */
+  /* margin-right: 10px; */
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 8px 24px;
+  background: #d4d4d4;
+  border-radius: 50px;
+  transition: all 0.25s ease-in-out;
+}
+
+.cta:disabled {
+  opacity: 0.3;
+}
+
+.cta:enabled:hover {
+  background: #eee;
+}
+
+.logo-c {
+  /* margin-top: -4% */
+}
+
+.logo-y {
+  max-width: 770px;
+  padding-bottom: 50px;
+  /* margin-top: -4% */
+}
+
+.nav > div {
+  min-width: calc(100% / 3) !important;
+}
+
+@media (max-width: 768px) {
+  .logos-b {
+    width: 180px;
+  }
+}
+@media (max-width: 640px) {
+  .logos-b {
+    width: 60%;
+    margin: auto;
+  }
+  .pjui {
+    margin-top: 20vw;
+  }
+  .logo-y {
+    max-width: 570px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logos-b {
+    width: 75%;
+  }
+}
+@media (max-width: 1600px) {
+  .cta {
+    /* position: relative;
+      right: 0;
+      margin-left: -111px; */
+  }
+}
+
+.glass-background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.glass-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.75rem;
+  /* width: 100%;
+  height: 100%; */
+  background-image: radial-gradient(
+    800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+    hsla(0, 0%, 100%, 0.06),
+    transparent 40%
+  );
+}
+
+@media (max-width: 600px) {
+  .mg__sec2 {
+    margin-top: -1rem !important;
+  }
+
+  .mg__sec--tab {
+    margin-top: 2rem !important;
+  }
+}

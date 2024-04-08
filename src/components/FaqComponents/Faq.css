@@ -1,0 +1,183 @@
+body {
+  font-family: "Aeonik";
+}
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.faq-heading {
+  font-family: "Aeonik";
+  font-size: xx-large;
+  font-weight: bold;
+  color: black;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 30px !important;
+}
+
+.hr-line {
+  width: 62%;
+  margin: auto;
+  margin-left: 260px;
+  border-bottom: 1px solid #777; /* Changed border to a solid line */
+}
+.faqmain {
+  padding-top: 0px;
+}
+/* Style the buttons that are used to open and close the FAQ page body */
+.faq-page {
+  /* background-color: #eee; */
+  border-bottom: 1px solid #777; /* Changed border to a solid line */
+
+  color: #444;
+  cursor: pointer;
+  padding: 16px 0px;
+  width: 60%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: auto;
+  margin-left: 280px;
+  font-size: 25px;
+}
+
+.faq-body {
+  margin: auto;
+  width: 50%;
+  /* padding: auto;  This should be removed */
+  font-size: 18px; /* Change the font size to your desired size */
+}
+.faq-body {
+  padding: 8px 0; /* Increased padding for better readability */
+  background-color: white;
+  color: black;
+  display: none;
+  margin-left: 280px;
+  /* overflow: hidden; */
+}
+.faq-heading {
+  font-size: 40px;
+}
+
+.faq-page:after {
+  /* content: '\2295'; */
+  content: url(../../assets/img/plus-circle.svg);
+  /* Unicode character for "plus" sign (+) */
+  font-size: 40px;
+  color: #000000;
+  float: right;
+  margin-left: 5px;
+  margin-top: -10px;
+}
+
+.active:after {
+  /* content: "\2296"; */
+  content: url(../../assets/img/dash-circle.svg);
+  /* Unicode character for "minus" sign (-) */
+}
+.mainfaq {
+  padding-inline: 1rem;
+  max-width: 1248px;
+  margin-inline: auto;
+  margin-top: 150px;
+}
+.faqmain {
+}
+.faq-body {
+  width: 100%;
+  margin: 0;
+}
+.mainfaq {
+  display: flex;
+}
+.faq-main {
+  width: 33.3%;
+}
+.faq-page {
+  flex: 1 1 0%;
+  margin: 0;
+}
+.hr-line {
+  width: 100%;
+  margin: 0;
+}
+.faq-heading {
+  margin-top: 0 !important;
+}
+.faq-container {
+  width: 67%;
+}
+.faq-page {
+  padding: 1.75rem;
+  width: 100%;
+}
+.faq-body {
+  padding-inline: 1.75rem;
+  padding-bottom: 1.75rem;
+  padding-top: 0;
+}
+@media (max-width: 1024px) {
+  .faq-container {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+  .hr-line,
+  .faq-page {
+    width: 100%;
+    margin: 0;
+  }
+  .faq-body {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .faq-heading {
+    font-size: 32px;
+  }
+  .mainfaq {
+    flex-direction: column;
+  }
+  .faq-container {
+    width: 100%;
+    padding-inline: 0 !important;
+  }
+  .faq-container {
+    max-width: 100%;
+    padding-inline: 20px;
+    margin-inline: auto;
+  }
+  .container.faq-main {
+    padding-inline: 20px;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .faq-heading {
+    margin-top: 0rem !important;
+  }
+  .faq-page {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 22px;
+  }
+  .faq-page:after {
+    font-size: 30px;
+
+    margin-top: 10px;
+  }
+  .active:after {
+    margin-block: 0;
+    margin-top: 10px;
+  }
+  .faq-body p {
+    font-size: 18px;
+  }
+}

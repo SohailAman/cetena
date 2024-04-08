@@ -1,0 +1,68 @@
+.top-bar {
+  height: 31px;
+  width: 100%;
+}
+.tpm {
+  padding-top: 31px;
+}
+@media (min-width: 768px) {
+  .addbloa {
+    height: 80px !important;
+  }
+}
+@media (max-width: 768px) {
+  .h-\[53px\] {
+    /* height: 70px; */
+    padding-block: 20px;
+  }
+  .lg-only {
+    display: none;
+  }
+  .mbl-menu {
+    flex-direction: column !important;
+    align-items: start;
+  }
+  .space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    margin: 0;
+  }
+  .lg-full {
+    max-width: unset !important;
+    padding-inline: 20px;
+    height: 120vh;
+    overflow: hidden;
+    background-color: white;
+    transition: all 0.3s ease;
+    visibility: visible;
+    opacity: 1;
+  }
+  .vis-hidden {
+    opacity: 0;
+    transition: all 0.3s ease;
+    visibility: hidden;
+  }
+  .main-link {
+    border-bottom: 1px solid rgb(22 22 22 / 11%);
+    width: 100%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .nav-social {
+    justify-content: start !important;
+    margin-top: 20px;
+  }
+  .nav-social .justify-between {
+    margin: 0;
+    gap: 20px;
+    min-width: auto !important;
+  }
+  .cross-sign {
+    transform: rotate(180deg);
+  }
+  .nav-sign {
+    transform: rotate(180deg);
+    transition: all 0.5s ease;
+  }
+  .mbl-logo {
+    width: 172px;
+  }
+}
