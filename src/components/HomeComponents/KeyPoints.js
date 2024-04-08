@@ -29,7 +29,7 @@ const KeyPOINTS = () => {
   // };
 
   return (
-    <section className="flex flex-col space-y-4 py-10 mg__sec2">
+    <section className="flex flex-col space-y-4 py-10 mg__sec2 lg:h-[70vh] lg:mt-[auto]">
       <div className="grid cards2 grid-cols-1 gap-[20px] md:grid-cols-3 md:gap-[10px]">
         <div className="card ">
           <div
