@@ -35,7 +35,11 @@ const Future = () => {
               className="logos-b"
               src={LogoY}
               alt="cf-jit"
-              style={{ width: "100%", height: "100%" }}
+              style={{
+                width: "100%",
+                height: "100%",
+                mixBlendMode: "multiply",
+              }}
             />
           ) : (
             <video
