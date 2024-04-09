@@ -30,8 +30,7 @@ const Future = () => {
     <section className="w-full">
       <div className="flex w-full flex-col items-center">
         <div className="relative h-[300px] w-[300px] aspect-w-1 aspect-h-1 lg:w-[400px] lg:h-[400px]">
-          {isSafari() ? (
-            <img
+          {/* <img
               className="logos-b"
               src={LogoY}
               alt="cf-jit"
@@ -40,28 +39,28 @@ const Future = () => {
                 height: "100%",
                 mixBlendMode: "multiply",
               }}
-            />
-          ) : (
-            <video
-              ref={videoRef}
-              autoPlay
-              loop
-              muted
-              playsInline
-              src={LogoX}
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                width: "auto",
-                height: "auto",
-                minWidth: "100%",
-                minHeight: "100%",
-                objectFit: "cover",
-              }}
-            ></video>
-          )}
+            /> */}
+          <video
+            preload
+            ref={videoRef}
+            // autoPlay
+            autoPlay="autoplay"
+            loop
+            muted
+            playsInline
+            src={LogoX}
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: "auto",
+              height: "auto",
+              minWidth: "100%",
+              minHeight: "100%",
+              objectFit: "cover",
+            }}
+          ></video>
         </div>
         <div className="flex mt-[5rem] w-full flex-col no-padi items-center justify-start px-2 sm:px-0">
           <span
