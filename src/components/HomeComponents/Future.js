@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import LogoY from "../../assets/img/Compass Logo1.gif";
+// import LogoY from "../../assets/img/Compass Logo1.gif";
 import LogoX from "../../assets/img/Compass Logo.webm";
 const Future = () => {
   const isSafari = () => {
@@ -43,12 +43,12 @@ const Future = () => {
           <video
             preload
             ref={videoRef}
-            // autoPlay
-            autoPlay="autoplay"
+            autoPlay
+            // autoPlay="autoplay"
             loop
             muted
             playsInline
-            src={LogoX}
+            src="https://res.cloudinary.com/doj6dmm0m/video/upload/v1712630298/Catena-Tools/Compass_Logo.webm"
             style={{
               position: "absolute",
               top: "50%",
