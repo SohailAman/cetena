@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import LogoY from "../../assets/img/Compass Logo.gif";
+import LogoY from "../../assets/img/Compass Logo1.gif";
 import LogoX from "../../assets/img/Compass Logo.webm";
 const Future = () => {
   const isSafari = () => {
