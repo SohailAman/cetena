@@ -83,7 +83,7 @@ const KeyPOINTS = () => {
                 alt="one"
                 loading="lazy"
                 style={{
-                  aspectRatio: "2.02",
+                  aspectRatio: "1.89",
                   height: "auto",
                   maxWidth: "100%",
                   objectFit: "contain",
@@ -95,10 +95,10 @@ const KeyPOINTS = () => {
               style={{
                 flexWrap: "wrap",
                 zIndex: "100",
-                // marginTop: "1.5rem",
+                marginTop: "1rem",
                 // justifySelf: "flex-end",
               }}
-              className="flex space-x-2 px-[20px] mt-[1rem] lg:mt-[1.5rem] mb-[1rem] sm:mb-[0]"
+              className="flex space-x-2 px-[20px] mt-[1rem] lg:mt-[1.5rem] sm:mb-[0]"
             >
               <div
                 style={{
@@ -189,7 +189,7 @@ const KeyPOINTS = () => {
                 src={tokenTwo}
                 alt=""
                 loading="lazy"
-                style={{ height: "auto", width: "100%", aspectRatio: "1.95" }}
+                style={{ height: "auto", width: "100%", aspectRatio: "1.85" }}
               />
             </div>
 
@@ -299,7 +299,7 @@ const KeyPOINTS = () => {
                 style={{
                   height: "auto",
                   width: "100%",
-                  aspectRatio: "1.95",
+                  aspectRatio: "1.85",
                   // width: "auto",
                 }}
               />

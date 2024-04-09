@@ -1,12 +1,17 @@
 import React, { useRef, useEffect } from "react";
-import LogoY from "../../assets/img/Compass Logo.webm";
+import LogoY from "../../assets/img/Compass Logo.gif";
+import LogoX from "../../assets/img/Compass Logo.webm";
 const Future = () => {
+  const isSafari = () => {
+    return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+  };
+  console.log(isSafari);
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const video = videoRef.current;
+    const video = videoRef?.current;
 
-    if (videoRef.current) {
+    if (videoRef?.current) {
       videoRef.current.play();
     }
 
@@ -14,10 +19,10 @@ const Future = () => {
       video.controls = false;
     };
 
-    video.addEventListener("loadedmetadata", handleLoadedMetadata);
+    video?.addEventListener("loadedmetadata", handleLoadedMetadata);
 
     return () => {
-      video.removeEventListener("loadedmetadata", handleLoadedMetadata);
+      video?.removeEventListener("loadedmetadata", handleLoadedMetadata);
     };
   }, []);
 
@@ -25,26 +30,34 @@ const Future = () => {
     <section className="w-full">
       <div className="flex w-full flex-col items-center">
         <div className="relative h-[300px] w-[300px] aspect-w-1 aspect-h-1 lg:w-[400px] lg:h-[400px]">
-          {/* <img className="logos-b" src={LogoY} alt="cf-jit" style={{}} /> */}
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted
-            playsInline
-            src={LogoY}
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "auto",
-              height: "auto",
-              minWidth: "100%",
-              minHeight: "100%",
-              objectFit: "cover",
-            }}
-          ></video>
+          {isSafari() ? (
+            <img
+              className="logos-b"
+              src={LogoY}
+              alt="cf-jit"
+              style={{ width: "100%", height: "100%" }}
+            />
+          ) : (
+            <video
+              ref={videoRef}
+              autoPlay
+              loop
+              muted
+              playsInline
+              src={LogoX}
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                width: "auto",
+                height: "auto",
+                minWidth: "100%",
+                minHeight: "100%",
+                objectFit: "cover",
+              }}
+            ></video>
+          )}
         </div>
         <div className="flex mt-[5rem] w-full flex-col no-padi items-center justify-start px-2 sm:px-0">
           <span

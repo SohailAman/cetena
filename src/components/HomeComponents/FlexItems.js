@@ -8,7 +8,7 @@ import Img7 from "../../assets/img/7.png";
 
 const FlexItems = () => {
   return (
-    <section className="flex all-imgs flex-col flexes space-y-40 md:space-y-10 mt__flex">
+    <section className="flex all-imgs flex-col flexes space-y-36 md:space-y-10 mt__flex">
       <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse h-[70vh] sm:h-[80vh]">
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
@@ -54,7 +54,7 @@ const FlexItems = () => {
       <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse h-[70vh] sm:h-[80vh]">
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
-            className="absolute scale-[100%] sm:-top-40 sm:left-10 sm:scale-150"
+            className="absolute scale-1 sm:scale-[220%] sm:-top-40 sm:left-10"
             src={Img6}
             alt=""
             id="contract-img"
@@ -76,7 +76,7 @@ const FlexItems = () => {
       >
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
-            className="absolute right-3 scale-[95%] sm:right-6 sm:scale-125"
+            className="absolute right-3 scale-[95%] sm:right-6 sm:scale-[220%]"
             id="contract-img-1"
             src={Img7}
             alt=""

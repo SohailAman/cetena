@@ -44,7 +44,7 @@ const Banner = () => {
       }}
     >
       <div className="flex main-banners max-w-[350px] flex-col items-center space-y-8 text-center md:max-w-[884px] h-full">
-        <div className="h-[200px] md:h-[350px] w-auto flex items-center justify-center mb-4">
+        <div className="h-[275px] md:h-[350px] w-auto flex items-center justify-center mb-4">
           <img
             className="animate-fade-in h-[100%] w-auto max-w-full max-h-full"
             src={LogoBanner}

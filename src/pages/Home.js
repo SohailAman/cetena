@@ -17,7 +17,7 @@ const Home = () => {
       <Header />
       <div className="my-[50px] my-home flex w-full justify-center px-4">
         <div className="z-10 w-full max-w-[1248px]">
-          <div className="flex flex-col justify-center space-y-20">
+          <div className="flex flex-col justify-center space-y-36">
             <Banner />
             <KeyPoints />
             <Future />
