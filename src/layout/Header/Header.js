@@ -31,7 +31,7 @@ const Header = () => {
           </Link>
           <div className="hamburger-small-screen">
             <button disabled className="cta small-cta">
-              Enter App
+              Enter dApp
             </button>
             <button
               onClick={toggleNav}
