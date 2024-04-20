@@ -39,7 +39,7 @@ const RoadMap = () => {
         <div className="flex justify-between roadmap-row">
           <div className="roadmap-left-col">
             <div className="roadmap-year">2023 02</div>
-            <ul className="roadmap-content">
+            <ul className="roadmap-content road-content-first">
               <li>Technical Thesis</li>
             </ul>
           </div>
@@ -77,7 +77,7 @@ const RoadMap = () => {
         <div className="flex justify-between roadmap-row">
           <div className="roadmap-left-col">
             <div className="roadmap-year">2023 04</div>
-            <ul className="roadmap-content">
+            <ul className="roadmap-content road-content-first">
               <li>Catena Tools dApp MVP</li>
               <li>Catena Tools Website</li>
               <li>Community Creation</li>
@@ -113,7 +113,7 @@ const RoadMap = () => {
         <div className="flex justify-between roadmap-row">
           <div className="roadmap-left-col">
             <div className="roadmap-year">2024 06</div>
-            <ul className="roadmap-content">
+            <ul className="roadmap-content road-content-first">
               <li>Catena Tools dApp Release</li>
               <li>Protocol Y Security Audit</li>
               <li>Protocol Y Platform</li>
@@ -144,7 +144,7 @@ const RoadMap = () => {
         <div className="flex justify-between roadmap-row">
           <div className="roadmap-left-col">
             <div className="roadmap-year">2024 08</div>
-            <ul className="roadmap-content">
+            <ul className="roadmap-content road-content-first">
               <li>Protocol Integrations</li>
               <li>Expand Chain Support</li>
               <li>$CHROME Exchange Listing</li>
@@ -173,7 +173,7 @@ const RoadMap = () => {
         <div className="flex justify-between roadmap-row">
           <div className="roadmap-left-col">
             <div className="roadmap-year">2025 10</div>
-            <ul className="roadmap-content">
+            <ul className="roadmap-content road-content-first">
               <li>Protocol Y Token Launch</li>
               <li>Systemic Expansion Module</li>
             </ul>
@@ -200,7 +200,7 @@ const RoadMap = () => {
         <div className="flex justify-between roadmap-row">
           <div className="roadmap-left-col">
             <div className="roadmap-year">2025 12</div>
-            <ul className="roadmap-content">
+            <ul className="roadmap-content road-content-first-li">
               <li>Protocol Y Token Exchange Listing</li>
             </ul>
           </div>

@@ -15,7 +15,21 @@ body {
 .pjui {
   margin-top: 10.2vw;
 }
-
+.roadmap-content {
+  padding-left: 0;
+  list-style: circle;
+}
+.road-content-first {
+  width: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin-left: auto;
+}
+.road-content-first-li li {
+  white-space: nowrap !important;
+}
 .faq-heading {
   font-family: "Aeonik";
   font-size: xx-large;
@@ -295,10 +309,7 @@ body {
   .inner-tiles {
     margin-top: 20px;
   }
-  .roadmap-content {
-    padding-left: 0;
-    list-style: circle;
-  }
+
   .mg__sec--tab {
     display: flex;
     align-items: center;
