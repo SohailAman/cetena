@@ -66,7 +66,7 @@ const Banner = () => {
           The ultimate on-chain DeFi analytics nexus{" "}
         </div>
         <div
-          className="max-w-[487px] sm:mt-0"
+          className="max-w-[487px] sec-text"
           style={{ transform: "translateY(-15px) translateZ(0)" }}
         >
           <span className="animate-move-down-2">
