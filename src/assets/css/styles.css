@@ -27,6 +27,14 @@ body {
   align-items: end;
   margin-left: auto;
 }
+.road-content-first-li {
+  width: fit-content !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  margin-left: auto;
+}
 .road-content-first-li li {
   white-space: nowrap !important;
 }
