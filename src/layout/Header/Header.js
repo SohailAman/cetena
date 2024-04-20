@@ -29,68 +29,69 @@ const Header = () => {
           >
             <img className="mbl-logo" src={WordLogo} alt="Catena logo" />
           </Link>
-          <button
-            onClick={toggleNav}
-            className="relative text-white outline-none"
-            type="button"
-            style={{
-              marginBottom: "5px",
-            }}
-          >
-            {Nav ? (
-              <svg
-                width={24}
-                height={24}
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="cross-sign "
-              >
-                <path
-                  d="M17.25 6.75L6.75 17.25"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M6.75 6.75L17.25 17.25"
-                  stroke="black"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            ) : (
-              <svg
-                width="25px"
-                height="25px"
-                viewBox="0 0 24 24"
-                fill="none"
-                className="nav-sign"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M4 18L20 18"
-                  stroke="#000000"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M4 12L20 12"
-                  stroke="#000000"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                />
-                <path
-                  d="M4 6L20 6"
-                  stroke="#000000"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                />
-              </svg>
-            )}
-            {/* <svg
+          <div className="hamburger-small-screen">
+            <button disabled className="cta small-cta">
+              Enter App
+            </button>
+            <button
+              onClick={toggleNav}
+              className="relative text-white outline-none"
+              type="button"
+            >
+              {Nav ? (
+                <svg
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="cross-sign "
+                >
+                  <path
+                    d="M17.25 6.75L6.75 17.25"
+                    stroke="black"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M6.75 6.75L17.25 17.25"
+                    stroke="black"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              ) : (
+                <svg
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  className="nav-sign"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 18L20 18"
+                    stroke="#000000"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M4 12L20 12"
+                    stroke="#000000"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M4 6L20 6"
+                    stroke="#000000"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                  />
+                </svg>
+              )}
+              {/* <svg
             width="25px"
             height="25px"
             viewBox="0 0 24 24"
@@ -116,7 +117,7 @@ const Header = () => {
               strokeLinecap="round"
             />
           </svg> */}
-            {/* <svg
+              {/* <svg
             width={24}
             height={24}
             viewBox="0 0 24 24"
@@ -139,7 +140,8 @@ const Header = () => {
               strokeLinejoin="round"
             />
           </svg> */}
-          </button>
+            </button>
+          </div>
         </div>
         {/* <center> */}
         <div
@@ -295,7 +297,7 @@ const Header = () => {
                   />
                 </svg>
               </a>
-              <button disabled className="cta">
+              <button disabled className="cta lg-cta">
                 Enter App
               </button>
             </div>

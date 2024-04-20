@@ -37,6 +37,9 @@ const Footer = () => {
     // script.dataset.labels = ["hello"];
     script.dataset.buttonTextColor = "#FFFFFF";
     script.dataset.buttonTextColor = "#5f5f5f";
+    script.dataset.icon =
+      "https://static.ghost.org/v4.0.0/images/ghost-orb-1.png";
+
     script.dataset.site = "https://blog.catena.tools/";
 
     formRef.current.appendChild(script);
@@ -114,7 +117,7 @@ const Footer = () => {
             <div className="flex flex-col space-y-7">
               <div className="flex flex-col space-y-2 y-43">
                 <span
-                  className=" text-[24px] font-bold md:text-[32px]"
+                  className=" text-[24px] font-normal md:text-[32px] small-screen-font"
                   style={{ color: "black" }}
                 >
                   Sign up for our newsletter

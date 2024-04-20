@@ -1,3 +1,21 @@
+.newsletter-wrap
+  .gh-signup-root
+  form
+  button.touch-manipulation
+  span:nth-of-type(1),
+.newsletter-wrap
+  .gh-signup-root
+  form
+  button.touch-manipulation
+  span:nth-of-type(2) {
+  position: relative !important;
+  display: none;
+}
+
+.gh-signup-root iframe form {
+  opacity: 0;
+}
+
 @media (max-width: 768px) {
   .y-43 {
     margin-top: 10px;

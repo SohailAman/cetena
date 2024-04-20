@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-// import Catalogue from "../../assets/img/trade-catalogue.png";
+import Catalogue from "../../assets/img/trade-catalogue.png";
 import Img4 from "../../assets/img/4b.png";
 import Img5 from "../../assets/img/5.png";
 import Img6 from "../../assets/img/6.png";
@@ -8,20 +8,10 @@ import Img7 from "../../assets/img/7.png";
 
 const FlexItems = () => {
   return (
-    <section className="flex all-imgs flex-col flexes space-y-36 md:space-y-10 mt__flex">
-      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse h-[70vh] sm:h-[80vh]">
+    <section className="flex all-imgs flex-col flexes space-y-10">
+      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse">
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
-          <img
-            className="absolute"
-            style={{
-              // aspectRatio: "2.02",
-              height: "auto",
-              maxWidth: "100%",
-              objectFit: "contain",
-            }}
-            src={Img4}
-            alt=""
-          />
+          <img className="absolute" src={Img4} alt="" />
         </div>
         <div className="flex max-w-md flex-1 flex-col sm:max-w-none tiles">
           <h1 className="text-24 font-semibold sm:text-[35px]">
@@ -33,7 +23,7 @@ const FlexItems = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row h-[70vh] sm:h-[80vh]">
+      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row">
         <div className="relative z-[-1] aspect-square min-h-[40vh] flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
             className="absolute left-[-60%] top-1/4 scale-[220%]"
@@ -51,17 +41,17 @@ const FlexItems = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse h-[70vh] sm:h-[80vh]">
+      <div className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row-reverse">
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
-            className="absolute scale-1 sm:scale-[220%] sm:-top-40 sm:left-10"
+            className="scale-[100%] sm:-top-40 sm:left-10 sm:scale-150 small-Automated"
             src={Img6}
             alt=""
-            id="contract-img"
+            id="contract-img-1"
           />
         </div>
         <div className="flex max-w-md flex-1 flex-col sm:max-w-none tiles">
-          <h1 className="text-24 font-semibold sm:text-[35px]">
+          <h1 className="text-24 font-semibold sm:text-[35px] inner-tiles">
             Automated Trade Cataloging
           </h1>
           <p className="text-cf-light-2">
@@ -71,19 +61,19 @@ const FlexItems = () => {
         </div>
       </div>
       <div
-        className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row h-[70vh]"
-        // id="contract-img-1-parent"
+        className="relative flex w-full flex-col items-center justify-end gap-8 sm:flex-row"
+        id="contract-img-1-parent"
       >
         <div className="relative z-[-1]  flex-1 img-flex sm:min-h-0 sm:min-w-[600px]">
           <img
-            className="absolute right-3 scale-[95%] sm:right-6 sm:scale-[220%]"
+            className="absolute right-3 scale-[95%] sm:right-6 sm:scale-125 small-Automated"
             id="contract-img-1"
             src={Img7}
             alt=""
           />
         </div>
         <div className="flex max-w-md flex-1 flex-col sm:max-w-none tiles">
-          <h1 className="text-24 font-semibold sm:text-[35px]">
+          <h1 className="text-24 font-semibold sm:text-[35px] inner-tiles">
             Versatile Protocol Integrations &amp; Performance Sharing
           </h1>
           <p className="text-cf-light-2">

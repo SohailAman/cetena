@@ -4,6 +4,11 @@
   text-align: center;
   justify-content: center;
 }
+.hamburger-small-screen {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 .logo-c {
   width: 234px;
 }
@@ -85,6 +90,10 @@
   } */
 }
 @media (max-width: 768px) {
+  .small-cta {
+    font-size: 12px;
+    padding: 5px 16px;
+  }
   .logo-la {
     width: 65%;
   }
@@ -118,6 +127,7 @@
   }
   .no-padi {
     padding: 0;
+    margin-top: 10px !important;
   }
   .logo-c {
     width: 43%;
@@ -127,7 +137,7 @@
     line-height: 47px;
   }
   .space-y-36 > :not([hidden]) ~ :not([hidden]) {
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
   .mt-\[-130px\].flex.flex-col {
     margin-inline: auto;
@@ -137,7 +147,7 @@
     margin-top: 10px;
   }
   .main-banners .animate-move-down-2 {
-    margin-top: 10px;
+    margin-top: 0px !important;
     display: block;
   }
 }
@@ -156,6 +166,14 @@
   }
   .tiles {
     margin-top: 20px;
+  }
+  .main-banner {
+    width: calc(100vw + 2rem) !important;
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+  .socials {
+    margin-top: 3rem !important;
   }
 }
 
@@ -231,6 +249,9 @@
   .namona2 img {
     width: 25px;
   }
+  .lg-cta {
+    display: none !important;
+  }
 }
 @media (max-width: 430px) {
   .namona2 .img5 {
@@ -283,7 +304,7 @@
     max-width: 400px;
   }
   #contract-img-1-parent {
-    margin-top: 50px;
+    margin-top: 76px;
   }
 }
 /*  Updated */

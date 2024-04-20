@@ -4,7 +4,7 @@ import "./assets/css/styles.css";
 import Router from "./config/Router";
 function App() {
   return (
-    <div className="App">
+    <div className="App overflow-x-hidden">
       <Router />
     </div>
   );

@@ -107,4 +107,7 @@
   .roadmap-wrapper .roadmap-row .roadmap-center-col .roadmap-dot {
     top: 10px;
   }
+  .roadmap-wrapper .roadmap-row .roadmap-left-col {
+    padding: 0px 2rem 2rem;
+  }
 }
