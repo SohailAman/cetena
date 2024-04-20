@@ -238,6 +238,9 @@
   .flexes img {
     width: 200px;
   }
+  .sec-text {
+    margin-top: 2px !important;
+  }
 }
 @media (max-width: 565px) {
   .namona2 .img5 {
